@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partnerships | CYFUTURE PTY LTD</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="partnerStyle.css">
+</head>
+<body>
+
+  <!-- Background Animated Glowing Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><span>CY</span>FUTURE</a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="partner.html" class="active">Partnerships</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-buttons">
+        <a href="login.html" class="btn-login">Login</a>
+        <a href="register.html" class="btn-register">Get Started</a>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE HERO SECTION -->
+    <section class="page-hero">
+      <div class="hero-content fade-up">
+        <span class="badge"><i class="fa-solid fa-handshake"></i> Strategic Ecosystem</span>
+        <h1>Powering Global <span>Career Mobility</span></h1>
+        <p>We bridge the gap between higher education institutions and international employers through structured, verified 3-month virtual internships.</p>
+        
+        <div class="hero-actions">
+          <a href="#partner-gateways" class="primary-btn"><i class="fa-solid fa-building-columns"></i> Explore Partner Options</a>
+          <a href="#partnerForm" class="sec-btn"><i class="fa-solid fa-paper-plane"></i> Apply to Partner</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DUAL GATEWAY SECTION -->
+    <section id="partner-gateways" class="gateways-section">
+      <div class="container">
+        <div class="section-title fade-up">
+          <h2>Choose Your <span>Partnership Path</span></h2>
+          <p>Whether you represent an academic institution or an innovative host enterprise, CYFUTURE provides a dedicated framework to scale your impact.</p>
+        </div>
+
+        <div class="grid-gateways">
+          <!-- GATEWAY 1: ACADEMIC INSTITUTIONS -->
+          <div class="glass-card gateway-card fade-up">
+            <div class="card-badge"><i class="fa-solid fa-graduation-cap"></i> For Universities & Colleges</div>
+            <h2>Higher Education Institutions</h2>
+            <p class="card-desc">Empower your students with international work exposure while automating student verification and academic reporting.</p>
+
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Official Verification Hub:</strong> Streamlined portal to verify student enrollment status.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Zero Admin Overhead:</strong> Automated progress tracking and performance reporting.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Industry Alignment:</strong> Curricula validation through real-world virtual placement projects.</li>
+            </ul>
+
+            <a href="#partnerForm" class="primary-btn card-btn" onclick="setPartnerRole('institution')">
+              <span>Partner as Institution</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- GATEWAY 2: HOST EMPLOYERS -->
+          <div class="glass-card gateway-card fade-up">
+            <div class="card-badge cyan"><i class="fa-solid fa-briefcase"></i> For Employers & Enterprises</div>
+            <h2>International Host Companies</h2>
+            <p class="card-desc">Access top-tier, pre-screened remote talent from premier institutions for structured 3-month project engagements.</p>
+
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Pre-Vetted Candidates:</strong> Talent pre-screened for technical proficiency and readiness.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Structured Framework:</strong> Standardized 3-month project templates and monthly milestones.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Global Talent Pipeline:</strong> Scale your remote project capacity with zero recruitment friction.</li>
+            </ul>
+
+            <a href="#partnerForm" class="sec-btn card-btn" onclick="setPartnerRole('company')">
+              <span>Partner as Employer</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-STEP WORKFLOW SECTION -->
+    <section class="workflow-section">
+      <div class="container">
+        <div class="section-title fade-up">
+          <h2>How Partnership <span>Works</span></h2>
+          <p>A simple three-step journey to integrate your organization with the CYFUTURE network.</p>
+        </div>
+
+        <div class="grid-steps">
+          <div class="glass-card step-card fade-up">
+            <div class="step-num">01</div>
+            <h3>Registration & Vetting</h3>
+            <p>Submit your organizational credentials through our partnership portal for rapid verification by our administrative team.</p>
+          </div>
+
+          <div class="glass-card step-card fade-up">
+            <div class="step-num">02</div>
+            <h3>Portal Activation</h3>
+            <p>Gain access to your custom dashboard—either for student enrollment verification or host project and placement management.</p>
+          </div>
+
+          <div class="glass-card step-card fade-up">
+            <div class="step-num">03</div>
+            <h3>Execution & Scale</h3>
+            <p>Launch structured virtual placements, monitor candidate evaluations, and review comprehensive performance reports in real time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE ONBOARDING FORM SECTION -->
+    <section class="partner-form-section">
+      <div class="container">
+        <div class="glass-card form-card fade-up">
+          <div class="form-header">
+            <h2>Apply for <span>Partnership</span></h2>
+            <p>Fill out the application below to initiate partner onboarding with CYFUTURE PTY LTD.</p>
+          </div>
+
+          <form id="partnerForm" novalidate>
+            <div class="form-grid">
+              
+              <div class="form-group">
+                <label for="orgName">Organization / Institution Name</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-building"></i>
+                  <input type="text" id="orgName" placeholder="e.g. National University of Lesotho" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="partnerType">Partner Type</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-sitemap"></i>
+                  <select id="partnerType" required>
+                    <option value="" disabled selected>Select Partner Type</option>
+                    <option value="institution">Higher Education Institution</option>
+                    <option value="company">Host Company / Enterprise</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactName">Primary Contact Person</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-user-check"></i>
+                  <input type="text" id="contactName" placeholder="e.g. Dr. Lerato Khoali" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Official Business Email</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="contactEmail" placeholder="e.g. l.khoali@university.edu" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="tel" id="phone" placeholder="+266 2200 0000" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="country">Country of Operation</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-globe"></i>
+                  <input type="text" id="country" placeholder="e.g. Lesotho" required>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-group full-width">
+              <label for="overview">Partnership Overview / Goals</label>
+              <div class="input-wrapper textarea-wrapper">
+                <i class="fa-solid fa-comment-dots"></i>
+                <textarea id="overview" rows="4" placeholder="Describe your placement volume, key departments, or hosting objectives..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="primary-btn submit-btn">
+              <span>Submit Application</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <!-- Form Alert Box -->
+            <div id="formAlert" class="alert-box" style="display: none;"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><i class="fa-solid fa-globe"></i> CY<span>FUTURE</span></a>
+        <p>Connecting higher education talent with international host employers through structured virtual internships.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="partner.html">Partnerships</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 CYFUTURE PTY LTD. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button id="topBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="partnerScript.js"></script>
+</body>
+</html>

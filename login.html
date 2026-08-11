@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CYFUTURE | Login</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="auth.css">
+
+</head>
+
+<body class="auth-page">
+
+<header>
+<nav class="navbar">
+<a href="index.html" class="logo"><span>CY</span>FUTURE</a>
+</nav>
+</header>
+
+<div class="floating-circle one"></div>
+<div class="floating-circle two"></div>
+<div class="floating-circle three"></div>
+
+<main class="auth-main">
+
+<div class="auth-wrapper">
+
+<div class="auth-container" id="auth-container" data-default="login">
+
+<!-- ================= SIGN IN ================= -->
+
+<div class="form-container sign-in-container">
+
+<form class="auth-form" action="#" method="post">
+
+<h1>Welcome Back</h1>
+<p>Sign in to continue your internship journey with CYFUTURE.</p>
+
+<div class="social-row">
+<a href="#" aria-label="Sign in with Google"><i class="fab fa-google"></i></a>
+<a href="#" aria-label="Sign in with LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+<a href="#" aria-label="Sign in with Microsoft"><i class="fab fa-microsoft"></i></a>
+</div>
+
+<span class="divider">or use your email</span>
+
+<div class="input-group">
+<i class="fa-solid fa-envelope field-icon"></i>
+<input type="email" name="email" placeholder="Email Address" required>
+</div>
+
+<div class="input-group">
+<i class="fa-solid fa-lock field-icon"></i>
+<input type="password" name="password" id="loginPassword" placeholder="Password" required>
+<button type="button" class="toggle-pass" aria-label="Toggle password visibility">
+<i class="fa-solid fa-eye"></i>
+</button>
+</div>
+
+<div class="form-options">
+<label>
+<input type="checkbox" name="remember"> Remember me
+</label>
+<a href="#" id="openForgotModal">Forgot password?</a>
+</div>
+
+<button type="submit" class="auth-submit">Sign In</button>
+
+</form>
+
+</div>
+
+<!-- ================= SIGN UP ================= -->
+
+<div class="form-container sign-up-container">
+
+<form class="auth-form" action="#" method="post">
+
+<h1>Create Account</h1>
+<p>Join CYFUTURE and unlock global virtual internship opportunities.</p>
+
+<div class="input-group">
+<i class="fa-solid fa-user field-icon"></i>
+<input type="text" name="full_name" placeholder="Full Name" required>
+</div>
+
+<div class="input-group">
+<i class="fa-solid fa-envelope field-icon"></i>
+<input type="email" name="email" placeholder="Email Address" required>
+</div>
+
+<div class="input-group">
+<i class="fa-solid fa-phone field-icon"></i>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+</div>
+
+<div class="input-group">
+<i class="fa-solid fa-building-columns field-icon"></i>
+<input type="text" name="institution" placeholder="Institution Name" required>
+</div>
+
+<div class="input-group">
+<i class="fa-solid fa-graduation-cap field-icon"></i>
+<select name="student_level" required>
+<option value="" disabled selected>Select Student Level</option>
+<option value="undergraduate">Undergraduate</option>
+<option value="graduate">Graduate</option>
+<option value="postgraduate">Postgraduate</option>
+</select>
+</div>
+
+<div class="input-group">
+<i class="fa-solid fa-lock field-icon"></i>
+<input type="password" name="password" id="registerPassword" placeholder="Password" required>
+<button type="button" class="toggle-pass" aria-label="Toggle password visibility">
+<i class="fa-solid fa-eye"></i>
+</button>
+</div>
+
+<div class="input-group">
+<i class="fa-solid fa-shield-halved field-icon"></i>
+<input type="password" name="confirm_password" placeholder="Confirm Password" required>
+</div>
+
+<label class="terms-row">
+<input type="checkbox" name="terms" required>
+<span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</span>
+</label>
+
+<button type="submit" class="auth-submit">Register</button>
+
+</form>
+
+</div>
+
+<!-- ================= OVERLAY ================= -->
+
+<div class="overlay-container">
+
+<div class="overlay">
+
+<div class="overlay-panel overlay-left">
+
+<h1>Welcome Back!</h1>
+<p>To stay connected with us please login with your personal info</p>
+<button type="button" class="ghost-btn" id="signIn">Sign In</button>
+
+</div>
+
+<div class="overlay-panel overlay-right">
+
+<h1>Hello, Friend!</h1>
+<p>Enter your personal details and start your journey with us</p>
+<button type="button" class="ghost-btn" id="signUp">Sign Up</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="auth-mobile-toggle">
+<button type="button" id="mobileLogin" class="active">Sign In</button>
+<button type="button" id="mobileRegister">Sign Up</button>
+</div>
+
+</div>
+
+<div class="auth-back-home">
+<a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+</div>
+
+</div>
+
+<!-- ================= FORGOT PASSWORD MODAL ================= -->
+<div class="modal-overlay" id="forgotModal">
+  <div class="modal-card">
+    <button class="modal-close" id="closeForgotModal">&times;</button>
+
+    <!-- STEP 1: ENTER EMAIL -->
+    <div class="fp-step active" id="fpStep1">
+      <h2>Reset Password</h2>
+      <p>Enter your registered email address and we'll send you a 6-digit OTP code.</p>
+      
+      <form id="fpFormEmail">
+        <div class="input-group">
+          <i class="fa-solid fa-envelope field-icon"></i>
+          <input type="email" id="fpEmailInput" placeholder="Email Address" required>
+        </div>
+        <button type="submit" class="auth-submit">Send OTP Code</button>
+      </form>
+    </div>
+
+    <!-- STEP 2: ENTER OTP -->
+    <div class="fp-step" id="fpStep2">
+      <h2>Verify OTP</h2>
+      <p>We sent a 6-digit verification code to <span id="displayFpEmail"></span>.</p>
+      
+      <form id="fpFormOtp">
+        <div class="otp-container">
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+        </div>
+        <button type="submit" class="auth-submit">Verify Code</button>
+        <p class="resend-text">Didn't receive code? <a href="#" id="resendOtp">Resend</a></p>
+      </form>
+    </div>
+
+    <!-- STEP 3: NEW PASSWORD -->
+    <div class="fp-step" id="fpStep3">
+      <h2>New Password</h2>
+      <p>Create a new strong password for your account.</p>
+      
+      <form id="fpFormReset">
+        <div class="input-group">
+          <i class="fa-solid fa-lock field-icon"></i>
+          <input type="password" id="fpNewPass" placeholder="New Password" required>
+        </div>
+        <div class="input-group">
+          <i class="fa-solid fa-shield-halved field-icon"></i>
+          <input type="password" id="fpConfirmPass" placeholder="Confirm Password" required>
+        </div>
+        <button type="submit" class="auth-submit">Reset Password</button>
+      </form>
+    </div>
+
+    <!-- STEP 4: SUCCESS -->
+    <div class="fp-step" id="fpStep4">
+      <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h2>Password Reset!</h2>
+      <p>Your password has been updated successfully. You can now log in.</p>
+      <button type="button" class="auth-submit" id="fpDoneBtn">Back to Login</button>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<script src="auth.js"></script>
+
+</body>
+</html>

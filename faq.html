@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions | CYFUTURE PTY LTD</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="faqStyle.css">
+</head>
+<body>
+
+  <!-- Background Animated Glowing Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><span>CY</span>FUTURE</a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="partner.html">Partnerships</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-buttons">
+        <a href="login.html" class="btn-login">Login</a>
+        <a href="register.html" class="btn-register">Get Started</a>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE HERO SECTION -->
+    <section class="page-hero">
+      <div class="hero-content fade-up">
+        <span class="badge"><i class="fa-solid fa-circle-question"></i> Help & Knowledge Base</span>
+        <h1>Frequently Asked <span>Questions</span></h1>
+        <p>Everything you need to know about CYFUTURE's virtual internship bridge, candidate verification, institutional partnerships, and international placements.</p>
+        
+        <!-- Live Search Bar -->
+        <div class="faq-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="faqSearchInput" placeholder="Search questions (e.g., verification, 3-month cycle, fees)...">
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ CATEGORY FILTER BUTTONS -->
+    <section class="faq-filter-section">
+      <div class="container">
+        <div class="filter-tabs fade-up">
+          <button class="filter-btn active" data-category="all">All Questions</button>
+          <button class="filter-btn" data-category="general">General</button>
+          <button class="filter-btn" data-category="students">Students</button>
+          <button class="filter-btn" data-category="institutions">Institutions</button>
+          <button class="filter-btn" data-category="companies">Host Companies</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION LIST -->
+    <section class="faq-accordion-section">
+      <div class="container max-800">
+        <div class="faq-list">
+
+          <!-- General Category -->
+          <div class="faq-item glass-card fade-up" data-category="general">
+            <div class="faq-question">
+              <h3>What is CYFUTURE PTY LTD?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>CYFUTURE PTY LTD is an international virtual internship bridge based in Maseru, Lesotho. We connect verified higher education students (undergraduate, graduate, and postgraduate) with global host employers for 3-month remote placements.</p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card fade-up" data-category="general">
+            <div class="faq-question">
+              <h3>How long does a virtual internship placement last?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>All virtual internships on our platform operate on a structured 3-month placement cycle with regular milestone evaluations conducted by host employers and monitored by CYFUTURE Admin.</p>
+            </div>
+          </div>
+
+          <!-- Students Category -->
+          <div class="faq-item glass-card fade-up" data-category="students">
+            <div class="faq-question">
+              <h3>Who is eligible to apply as a student?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Students currently enrolled in or recently graduated from recognized higher education institutions in Lesotho and internationally across Undergraduate, Graduate, and Postgraduate levels are eligible to register.</p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card fade-up" data-category="students">
+            <div class="faq-question">
+              <h3>What documents do students need to upload?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>During or after registration, students must upload a clean copy of their National ID / Passport, an updated Professional CV, and official Proof of Academic Registration / Qualification for verification.</p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card fade-up" data-category="students">
+            <div class="faq-question">
+              <h3>How does candidate matching work?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Once your documents are verified by CYFUTURE Admin and confirmed by your partner institution, our automated system matches your skills, field of study, and availability with international company opening requirements.</p>
+            </div>
+          </div>
+
+          <!-- Institutions Category -->
+          <div class="faq-item glass-card fade-up" data-category="institutions">
+            <div class="faq-question">
+              <h3>Why should colleges and universities partner with CYFUTURE?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Partnering institutions gain an administrative dashboard to verify student enrollments, track student career readiness, and offer students direct access to international practical workplace exposure without geographical boundaries.</p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card fade-up" data-category="institutions">
+            <div class="faq-question">
+              <h3>How do institutions verify student records?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Designated institutional coordinators log into their dedicated portal to view pending student verification requests and confirm active enrollment status in just a few clicks.</p>
+            </div>
+          </div>
+
+          <!-- Companies Category -->
+          <div class="faq-item glass-card fade-up" data-category="companies">
+            <div class="faq-question">
+              <h3>How do international host companies submit internship openings?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Host companies register a portal account, submit company compliance documentation, and use the Employer Dashboard to define required technical skills, intern capacity, and preferred start dates.</p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card fade-up" data-category="companies">
+            <div class="faq-question">
+              <h3>Are interns evaluated during the 3-month program?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes. Host supervisors complete brief online progress evaluations through the company portal at Month 1, Month 2, and Month 3 to ensure quality work output and student development.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- No Results Search Message -->
+        <div id="noResultsMsg" class="no-results glass-card" style="display: none;">
+          <i class="fa-solid fa-magnifying-glass-minus"></i>
+          <h3>No matching questions found</h3>
+          <p>Try searching with different keywords or contact our support team directly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STILL HAVE QUESTIONS CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="glass-card cta-card fade-up">
+          <h2>Still Have Questions?</h2>
+          <p>Can't find the answer you're looking for? Reach out to our support team and we'll get back to you within 24 hours.</p>
+          <div class="cta-btns">
+            <a href="contact.html" class="primary-btn">Contact Us</a>
+            <a href="register.html" class="sec-btn">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><i class="fa-solid fa-globe"></i> CY<span>FUTURE</span></a>
+        <p>Connecting higher education talent with international host employers through structured virtual internships.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="partner.html">Partnerships</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 CYFUTURE PTY LTD. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button id="topBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="faqScript.js"></script>
+</body>
+</html>
