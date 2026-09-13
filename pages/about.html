@@ -8,10 +8,14 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="aboutStyle.css">
+  <link rel="stylesheet" href="../css/aboutStyle.css">
+  <link rel="stylesheet" href="../css/nav.css">
 </head>
-<body>
+<body class="inner-page">
 
   <!-- Background Animated Glowing Orbs -->
   <div class="glow-orb orb-1"></div>
@@ -26,8 +30,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="partner.html">Partnerships</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html?nav=3">FAQ</a></li>
+        <li><a href="contact.html?nav=3">Contact</a></li>
       </ul>
 
       <div class="nav-buttons">
@@ -134,7 +138,7 @@
           <p>Whether you're a student seeking global exposure, an institution supporting your learners, or a company seeking fresh talent.</p>
           <div class="cta-btns">
             <a href="register.html" class="primary-btn">Join CYFUTURE Today</a>
-            <a href="contact.html" class="sec-btn">Contact Our Team</a>
+            <a href="contact.html?nav=3" class="sec-btn">Contact Our Team</a>
           </div>
         </div>
       </div>
@@ -156,9 +160,9 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="faq.html?nav=3">FAQs</a></li>
             <li><a href="partner.html">Partnerships</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html?nav=3">Contact</a></li>
           </ul>
         </div>
       </div> <!-- Properly closed footer-content here -->
@@ -173,6 +177,7 @@
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
-  <script src="aboutScript.js"></script>
+  <script src="../js/aboutScript.js"></script>
+  <script src="../js/nav.js"></script>
 </body>
 </html>

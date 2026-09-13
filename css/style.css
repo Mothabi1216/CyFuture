@@ -303,6 +303,8 @@ width:100%;
 
 }
 
+.nav-links a.active::after{width:100%;}
+
 .active{
 
 color:var(--secondary);
@@ -1932,6 +1934,20 @@ height:3px;
 
 background:white;
 
+}
+
+.nav-links.active{
+display:flex;
+flex-direction:column;
+position:absolute;
+top:100%;
+left:0;
+width:100%;
+padding:24px;
+gap:20px;
+text-align:center;
+background:rgba(5,15,30,.98);
+box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
 
 section{

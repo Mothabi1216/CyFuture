@@ -13,8 +13,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="auth.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/auth.css">
+<link rel="stylesheet" href="../css/nav.css">
 
 </head>
 
@@ -23,6 +24,18 @@
 <header>
 <nav class="navbar">
 <a href="index.html" class="logo"><span>CY</span>FUTURE</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="partner.html">Partnerships</a></li>
+<li><a href="faq.html?nav=3">FAQ</a></li>
+<li><a href="contact.html?nav=3">Contact</a></li>
+</ul>
+<div class="nav-buttons">
+<a href="login.html" class="btn-login">Login</a>
+<a href="register.html" class="btn-register">Get Started</a>
+</div>
+<div class="hamburger" role="button" tabindex="0" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></div>
 </nav>
 </header>
 
@@ -70,7 +83,7 @@
 <label>
 <input type="checkbox" name="remember"> Remember me
 </label>
-<a href="#">Forgot password?</a>
+<a href="#" id="openForgotModal">Forgot password?</a>
 </div>
 
 <button type="submit" class="auth-submit">Sign In</button>
@@ -181,9 +194,77 @@
 
 </div>
 
+<!-- ================= FORGOT PASSWORD MODAL ================= -->
+<div class="modal-overlay" id="forgotModal">
+  <div class="modal-card">
+    <button class="modal-close" id="closeForgotModal">&times;</button>
+
+    <!-- STEP 1: ENTER EMAIL -->
+    <div class="fp-step active" id="fpStep1">
+      <h2>Reset Password</h2>
+      <p>Enter your registered email address and we'll send you a 6-digit OTP code.</p>
+
+      <form id="fpFormEmail">
+        <div class="input-group">
+          <i class="fa-solid fa-envelope field-icon"></i>
+          <input type="email" id="fpEmailInput" placeholder="Email Address" required>
+        </div>
+        <button type="submit" class="auth-submit">Send OTP Code</button>
+      </form>
+    </div>
+
+    <!-- STEP 2: ENTER OTP -->
+    <div class="fp-step" id="fpStep2">
+      <h2>Verify OTP</h2>
+      <p>We sent a 6-digit verification code to <span id="displayFpEmail"></span>.</p>
+
+      <form id="fpFormOtp">
+        <div class="otp-container">
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+        </div>
+        <button type="submit" class="auth-submit">Verify Code</button>
+        <p class="resend-text">Didn't receive code? <a href="#" id="resendOtp">Resend</a></p>
+      </form>
+    </div>
+
+    <!-- STEP 3: NEW PASSWORD -->
+    <div class="fp-step" id="fpStep3">
+      <h2>New Password</h2>
+      <p>Create a new strong password for your account.</p>
+
+      <form id="fpFormReset">
+        <div class="input-group">
+          <i class="fa-solid fa-lock field-icon"></i>
+          <input type="password" id="fpNewPass" placeholder="New Password" required>
+        </div>
+        <div class="input-group">
+          <i class="fa-solid fa-shield-halved field-icon"></i>
+          <input type="password" id="fpConfirmPass" placeholder="Confirm Password" required>
+        </div>
+        <button type="submit" class="auth-submit">Reset Password</button>
+      </form>
+    </div>
+
+    <!-- STEP 4: SUCCESS -->
+    <div class="fp-step" id="fpStep4">
+      <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h2>Password Reset!</h2>
+      <p>Your password has been updated successfully. You can now log in.</p>
+      <button type="button" class="auth-submit" id="fpDoneBtn">Back to Login</button>
+    </div>
+
+  </div>
+</div>
+
 </main>
 
-<script src="auth.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
 
 
 <!-- FOOTER COPYRIGHT -->
@@ -191,9 +272,7 @@
     <p>&copy; 2026 CYFUTURE PTY LTD. All Rights Reserved.</p>
   </footer>
 
-  <script src="auth.js"></script>
-</body>
-</html>
+
 
 </body>
 </html>

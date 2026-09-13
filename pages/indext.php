@@ -25,7 +25,7 @@ rel="stylesheet">
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <link rel="stylesheet"
-href="style.css">
+href="../css/style.css">
 
 </head>
 
@@ -55,17 +55,17 @@ href="style.css">
 
 <ul class="nav-links">
 
-<li><a href="index.php" class="active">Home</a></li>
+<li><a href="index.html" class="active">Home</a></li>
 
-<li><a href="about.php">About</a></li>
+<li><a href="about.html">About</a></li>
 
 <li><a href="register.html">Registration</a></li>
 
 <li><a href="login.html">Login</a></li>
 
-<li><a href="contact.php">Contact</a></li>
+<li><a href="contact.html?nav=3">Contact</a></li>
 
-<li><a href="faq.php">FAQ</a></li>
+<li><a href="faq.html?nav=3">FAQ</a></li>
 
 </ul>
 
@@ -147,7 +147,7 @@ Register Now
 
 </a>
 
-<a href="about.php"
+<a href="about.html"
 class="secondary-btn">
 
 Learn More
@@ -844,7 +844,7 @@ virtual internship.
 
         <div class="testimonial-card">
 
-            <img src="images/student1.jpg" alt="Student">
+            <img src="../images/student1.jpg" alt="Student">
 
             <h3>John Doe</h3>
 
@@ -862,7 +862,7 @@ virtual internship.
 
         <div class="testimonial-card">
 
-            <img src="images/student2.jpg" alt="Student">
+            <img src="../images/student2.jpg" alt="Student">
 
             <h3>Mary Smith</h3>
 
@@ -879,7 +879,7 @@ virtual internship.
 
         <div class="testimonial-card">
 
-            <img src="images/company.jpg" alt="Company">
+            <img src="../images/company.jpg" alt="Company">
 
             <h3>GlobalTech Ltd</h3>
 
@@ -1097,17 +1097,17 @@ Quick Links
 
 <ul>
 
-<li><a href="index.php">Home</a></li>
+<li><a href="index.html">Home</a></li>
 
-<li><a href="about.php">About</a></li>
+<li><a href="about.html">About</a></li>
 
 <li><a href="register.html">Register</a></li>
 
 <li><a href="login.html">Login</a></li>
 
-<li><a href="contact.php">Contact</a></li>
+<li><a href="contact.html?nav=3">Contact</a></li>
 
-<li><a href="faq.php">FAQ</a></li>
+<li><a href="faq.html?nav=3">FAQ</a></li>
 
 </ul>
 
@@ -1203,7 +1203,7 @@ All Rights Reserved.
 
 </button>
 
-<script src="script.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 

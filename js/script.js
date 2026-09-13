@@ -33,6 +33,21 @@ STICKY NAVBAR
 
 const header=document.querySelector("header");
 
+const hamburger=document.querySelector(".hamburger");
+const mobileNav=document.querySelector(".nav-links");
+if(hamburger && mobileNav){
+  hamburger.addEventListener("click",function(){
+    const open=mobileNav.classList.toggle("active");
+    hamburger.setAttribute("aria-expanded",String(open));
+  });
+  mobileNav.addEventListener("click",function(event){
+    if(event.target.closest("a")){
+      mobileNav.classList.remove("active");
+      hamburger.setAttribute("aria-expanded","false");
+    }
+  });
+}
+
 window.addEventListener("scroll",function(){
 
 if(window.scrollY>60){
@@ -460,60 +475,6 @@ glow.style.left=e.clientX+"px";
 glow.style.top=e.clientY+"px";
 
 });
-
-
-
-/*=========================
-RANDOM FLOATING ICONS
-=========================*/
-
-const icons=[
-
-"💻",
-
-"🌍",
-
-"🚀",
-
-"🎓",
-
-"💼",
-
-"⭐"
-
-];
-
-function floatingEmoji(){
-
-const emoji=document.createElement("div");
-
-emoji.className="floatingEmoji";
-
-emoji.innerHTML=
-
-icons[Math.floor(Math.random()*icons.length)];
-
-emoji.style.left=Math.random()*100+"vw";
-
-emoji.style.fontSize=
-
-(Math.random()*20+18)+"px";
-
-emoji.style.animationDuration=
-
-(Math.random()*6+6)+"s";
-
-document.body.appendChild(emoji);
-
-setTimeout(()=>{
-
-emoji.remove();
-
-},12000);
-
-}
-
-setInterval(floatingEmoji,2500);
 
 
 

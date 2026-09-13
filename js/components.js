@@ -8,8 +8,8 @@ const navLinks = [
 { id: "home", label: "Home", href: "index.html" },
 { id: "about", label: "About", href: "about.html" },
 { id: "partner", label: "Partner With Us", href: "partner.html" },
-{ id: "contact", label: "Contact", href: "contact.html" },
-{ id: "faq", label: "FAQ", href: "faq.html" }
+{ id: "contact", label: "Contact", href: "contact.html?nav=3" },
+{ id: "faq", label: "FAQ", href: "faq.html?nav=3" }
 ];
 
 const navItems = navLinks.map(function (link) {
@@ -38,8 +38,8 @@ const footerHTML =
 '<li><a href="partner.html">Partner With Us</a></li>' +
 '<li><a href="register.html">Register</a></li>' +
 '<li><a href="login.html">Login</a></li>' +
-'<li><a href="contact.html">Contact</a></li>' +
-'<li><a href="faq.html">FAQ</a></li>' +
+'<li><a href="contact.html?nav=3">Contact</a></li>' +
+'<li><a href="faq.html?nav=3">FAQ</a></li>' +
 "</ul></div>" +
 '<div class="footer-column"><h3>Contact</h3>' +
 "<p>Maseru, Lesotho</p><p>info@cyfuture.co.ls</p><p>+266 XX XXX XXX</p></div>" +

@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /Cyfuture/
+
+# Preserve bookmarks to page URLs from before the folder cleanup.
+RewriteRule ^([^/]+\.html)$ pages/$1 [R=302,L]
+RewriteRule ^indext\.php$ pages/indext.php [R=302,L]
